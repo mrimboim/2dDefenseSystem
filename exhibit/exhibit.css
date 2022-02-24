@@ -1,0 +1,351 @@
+
+
+/*_____________________Other & Misc___________________________*/
+:root {
+    --main-width: 8%;
+  }
+body {
+    display: flex;  
+    flex-direction: column;
+    margin: 0 0 0 0;
+    min-height: 100vh;
+    
+    /* background-color: deeppink; */
+
+}
+
+     
+/*______________________TOP PART_______________________*/
+header {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items:center;
+    /* background-color: yellow; */
+    height:15vh;
+    
+}
+.hrline1{
+    display:inline;
+}
+footer{
+    display: none;
+    flex-direction: row;
+    background-color: #f9ac78;
+    height:30vh;
+}
+
+
+.firstNav{        
+    flex-direction: row;
+    margin-right: var(--main-width);
+    
+}
+.home{
+    display: inline;
+  
+  
+}
+
+
+h3{
+    /* background-color: blueviolet;    */
+    margin-left: var(--main-width);
+}
+
+.firstfooterul{
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    list-style-type: none;
+    margin-left: var(--main-width);
+    /* padding-left: 0; */
+    color: #C9523D;
+    /* background-color: blueviolet;  */
+}
+
+.secondfooterul{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    list-style-type: none;
+    margin-right: var(--main-width);
+    color: #C9523D;
+    /* background-color: blueviolet;  */
+    margin-left: var(--main-width);
+}
+
+
+/*_________________________________MIDDLE PART___________________*/
+.orange-parent{
+    display:flex;
+    background-color: #f9ac78;
+    flex-wrap: wrap;
+    margin: 0 0;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    
+}
+
+.Thingy{
+    margin-left: var(--main-width);
+}
+.pictureinorange{
+    max-width: auto;
+    max-height: 45vh;
+    /* background-color: blue; */
+
+}   
+
+.orangetext{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;     
+    height: min-content; 
+    flex-wrap: nowrap;
+    min-width: min-content;
+    margin-right: var(--main-width);
+}
+
+.firstorangetext{
+    
+    color: white;   
+    margin-bottom: 0;   
+    margin-top: 0;
+    height: min-content;
+    font-size: 500%;
+    min-width: max-content;
+    font-family: montserrat, sans-serif; font-weight: 700; font-style: bold;
+}
+
+.secondorangetext{
+   
+    color: white;
+    margin-top: 0;
+    margin-bottom:0;
+    font-size: 325%;
+    font-family: montserrat, sans-serif; font-weight: 350; font-style: bold;
+}
+
+
+
+/*______________________________BOTTOM PART__________________*/
+.bottompart{
+    display:flex; 
+    flex-direction: column;
+    /* background-color: crimson; */
+  
+    min-height: 50vh;
+}
+
+.topbottompart{
+    display: flex;
+    margin-left: var(--main-width);
+    margin-right: var(--main-width);
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    
+}
+.topbottomtext{
+    display: flex;
+    flex-direction: column;
+    /* background-color: darkorange; */
+    max-width: 50%;
+}
+.breakline{
+    /* background-color: gold; */
+    flex-direction: row;
+    width: 100%;
+
+}   
+
+.topbottomimg{
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 4%;
+
+}
+
+
+.bottombottompart{
+    display:none;
+    flex-direction: row;
+    /* flex-wrap: wrap-reverse; */
+    flex-wrap:nowrap;
+    margin-left: var(--main-width);
+    margin-right: var(--main-width);
+   
+    margin-top: 0;
+
+
+}
+
+/* .bottombottomtext{ */
+
+/* } */
+
+/* .bottombottomimg{ */
+
+
+/* } */
+
+#morebutton{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer; 
+    width: fit-content;
+    text-decoration: underline;
+    color: red;
+
+}
+#lessbutton{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer; 
+    width: fit-content;
+    text-decoration: underline;
+    color: red;
+
+}
+
+/* @media all and (max-width: 500px) */
+
+
+@media (max-width:450px) {
+    :root {
+        --main-width: 0%;
+      }
+
+      body {
+        display: flex;  
+        flex-direction: column;
+        margin: 0 0 0 0;
+        min-height: 100vh;
+        min-width: 100vw;
+        
+        /* background-color: deeppink; */
+    
+    }
+    .orange-parent{
+        display:flex;
+        background-color: #f9ac78;
+        flex-wrap: wrap;
+        margin: 0 0;
+        height: fit-content;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+    
+        
+    }
+    
+    .Thingy{
+        width:100vw;
+        height:25vh;
+    }
+    .pictureinorange{
+        width:100vw;
+        max-height: auto;
+       
+    }
+    .orangetext{
+      
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;     
+        height: min-content; 
+        flex-wrap: nowrap;
+        min-width: min-content;
+        margin-right: var(--main-width);
+        background-color: #f9ac78;
+    }
+    
+    .firstorangetext{
+        
+        color: white;   
+        margin-bottom: 0;   
+        margin-top: 0;
+        height: min-content;
+        font-size: 300%;
+        min-width: max-content;
+        font-family: montserrat, sans-serif; font-weight: 700; font-style: bold;
+    }
+    
+    .secondorangetext{
+        color: white;
+        margin-top: 0;
+        margin-bottom:0;
+        font-size: 180%;
+        font-family: montserrat, sans-serif; font-weight: 350; font-style: bold;
+    }
+
+    
+
+    .bottompart{
+        display:flex; 
+        flex-direction: column;
+        /* background-color: crimson; */
+      
+        min-height: 50vh;
+    }
+    
+    .topbottompart{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-bottom: 3%;
+        margin-top: 0;
+    }
+    .topbottomtext{
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+        /* background-color: darkorange; */
+  
+    }
+    .breakline{
+        /* background-color: gold; */
+        flex-direction: row;
+        width: 100%;
+    
+    }   
+    
+    .topbottomimg{
+        display: none;
+
+    
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items:center;
+        justify-self: center;
+     
+        height:15vh;
+      
+        
+    }
+    
+}

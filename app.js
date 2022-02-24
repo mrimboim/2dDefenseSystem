@@ -5,14 +5,12 @@ const port = 3000
 const server = http.createServer(function (req, res) {
     res.writeHead(200, {"Content-Type": "text/html"})
     console.log("testing to see if this gets called everytime page is refreshed")
-    fs.readFile('index.html', function (error, data) {
+    fs.readFile('exhibit/index.html', function (error, data) {
         if (error) {
             res.writeHead(404, {"Content-Type": "text/plain"})
             res.write("Eror: File Not Found")
-            console.log('eroror')
         } else {
             res.write(data)
-            res.write('not error ')
         }
         res.end()
     })
