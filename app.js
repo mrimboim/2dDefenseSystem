@@ -1,27 +1,11 @@
-const http = require('http')
-const fs = require('fs')
-const port = 3000
+const express = require("express")
+const app = express()
 
-const server = http.createServer(function (req, res) {
-    res.writeHead(200, {"Content-Type": "text/html"})
-    console.log("testing to see if this gets called everytime page is refreshed")
-    fs.readFile('exhibit/index.html', function (error, data) {
-        if (error) {
-            res.writeHead(404, {"Content-Type": "text/plain"})
-            res.write("Eror: File Not Found")
-        } else {
-            res.write(data)
-        }
-        res.end()
-    })
-
- 
+app.get("/", (req,res) => {
+    console.log("Here")
+    res.send("hi")
 })
+app.listen(3000)
 
-server.listen(port, function (error) {
-    if (error) {
-        console.log('something went wrong', error)
-    } else {
-        console.log('server is listening on port ' + port)
-    }
-})
+
+

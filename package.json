@@ -1,0 +1,27 @@
+{
+  "name": "js2dtest",
+  "version": "1.0.0",
+  "description": "-to learn how to get node js to work on a local server and what that means - to try some physics in javascript to be loaded through nodejs to the client on the network",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrimboim/js2dtest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrimboim/js2dtest/issues"
+  },
+  "homepage": "https://github.com/mrimboim/js2dtest#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
