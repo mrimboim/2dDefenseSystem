@@ -8,8 +8,10 @@ app.get("/", (req,res) => {
     res.send("hi")
 })
 
+
+
 let webLink = 'http://' + ip.address() + ':' + port;
-app.listen(port, () => console.log("listening on port:",port,'\n' + '\u001b[' + 44 + 'm' + webLink + '\u001b[0m'));
+app.listen(port, () => console.log("listening on port:",port,'\n' + '\u001b[' + 44 + 'm' + webLink + '\u001b[0m' + '\n'));
 
 
 
