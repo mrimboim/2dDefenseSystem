@@ -7,18 +7,26 @@ const port = 3000;
 
 
 app.set('view engine' , 'ejs');
-app.use('/assets', express.static('assets'));
+app.use('/assets/exhibitAssets', express.static('assets/exhibitAssets'));
+app.use('/assets/2dAssets', express.static('assets/2dAssets'));
 
 app.get("/", (req,res) => {
     res.render('exhibit');
 
-    console.log("Get request made");
+    console.log("Exhibit GET request");
+})
+
+app.get("/2d", (req,res) => {
+    res.render('2d');
+
+    console.log("2D GET request");
 })
 
 
 
+
 let webLink = 'http://' + ip.address() + ':' + port;
-app.listen(port, () => console.log("listening on port:",port,'\n' + '\u001b[' + 44 + 'm' + webLink + '\u001b[0m' + '\n'));
+app.listen(port, () => console.log("listening on port:",port,'\n' + 'Exhibit: ' + '\u001b[' + 44 + 'm' + webLink + '\u001b[0m' + '\n' + '2d: ' + '\u001b[' + 41 + 'm' + webLink + '/2d' + '\u001b[0m' + '\n'));
 
 
 
