@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mrimboim/js2dtest#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
     "ip": "^1.1.5"
   },

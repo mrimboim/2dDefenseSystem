@@ -1,11 +1,18 @@
 const express = require("express");
+const { engine } = require("express/lib/application");
 const ip = require("ip");
+
 const app = express();
 const port = 3000; 
 
+
+app.set('view engine' , 'ejs');
+app.use('/assets', express.static('assets'));
+
 app.get("/", (req,res) => {
-    console.log("Here")
-    res.send("hi")
+    res.render('exhibit');
+
+    console.log("Get request made");
 })
 
 
