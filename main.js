@@ -9,6 +9,7 @@ const port = 3000;
 app.set('view engine' , 'ejs');
 app.use('/assets/exhibitAssets', express.static('assets/exhibitAssets'));
 app.use('/assets/2dAssets', express.static('assets/2dAssets'));
+// app.use('/node_modules/matter.js', express.static('node_modules/matter-js'))
 
 app.get("/", (req,res) => {
     res.render('exhibit');
