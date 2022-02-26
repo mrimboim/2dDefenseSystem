@@ -37,7 +37,7 @@ footer{
 }
 
 
-.firstNav{        
+.navBar{        
     flex-direction: row;
     margin-right: var(--main-width);
     
