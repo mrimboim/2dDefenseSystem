@@ -1,5 +1,7 @@
 # JS Test for 2d things and using node js on a local server 
 
+## The goal is to create a 2d missile defense system in javascript, then a 3d one then implement it on an esp8266 with some kind of laser or camera modules
+
 -to learn how to get node js to work on a local server and what that means
 - to try some physics in javascript to be loaded through nodejs to the client on the network 
 
